@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.floating-stack {
+  background: #455a64;
+  color: #fff;
+  height: 130px;
+  width: 320px;
+  border-radius: 1rem;
+  overflow-y: auto;
+  margin-left: 10px;
+}
+
+.floating-stack > dl {
+  margin: 0 0 1rem;
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.floating-stack dt {
+  position: sticky;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-weight: bold;
+  background: #263238;
+  color: #cfd8dc;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  padding: 0.25rem 1rem;
+  grid-column: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.floating-stack dd {
+  grid-column: 2;
+  margin: 0;
+  padding: 0.75rem;
+  
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+  
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f5a911;
+    background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+
+.floating-stack > dl:first-of-type > dd:first-of-type {
+  margin-top: 0.25rem;
+}
+
+ body {
+        font-family: "Arial", sans-serif;
+        background-color: #2f2f2f;
+        margin: 0;
+        padding: 0;
+        color: white;
+        border-bottom: 2px solid #f5a911;
+
+      }
+
+      header {
+        background-color: #414141;
+        color: #f5a911;
+        padding: 10px;
+        text-align: center;
+        border-top: 2px solid #f5a911;
+        text-shadow: 1px 1px 0 #000000, 1px 1px 0 #000000, 1px 1px 0 #000000,
+          1px 1px 0 #000000;
+          
+          margin-bottom: 4%;
+      }
+
+      html {
+        height: 100%;
+        border-bottom: 2px solid #f5a911;
+      }
+
+      section {
+        margin: 20px;
+      }
+
+      .details{
+          display: flex;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 20px;
+         background: linear-gradient(beige,#dfdbd2 ) ;
+        /* background-color: #f7f1e3; */
+
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: white;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .itineraire,
+      .statistiques {
+        display: flex;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: white;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .recherche{
+        display: flex;
+    justify-content: center;
+    background: linear-gradient(beige,#ffdd9a ) ;
+    }
+
+
+      .itineraire img {
+        max-width: 100px;
+        max-height: 100px;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #f5a911;
+        color: #000000;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        transition: background-color 0.3s ease;
+        height: 35px;
+      }
+
+      button:hover {
+        background-color: #c1850c;
+      }
+
+      h2 {
+        color: #f5a911;
+        text-shadow: 1px 1px 0 #000000, 1px 1px 0 #000000, 1px 1px 0 #000000,
+          1px 1px 0 #000000;
+      }
+
+      /* Nouveaux styles pour les listes déroulantes */
+      label,
+      select {
+        display: flex;
+        height: 35px;
+        
+      }
+
+
+    form{
+        align-items: center;
+    }
+
+  /* Map*/
+
+.map-container {
+  padding: 3.2rem .8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.map-container img {
+  width: 100%;
+}
+
+.map-container .point {
+  cursor: pointer;
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color:  #1c1505;
+  border-radius: 50%;
+  transition: all .3s ease;
+  will-change: transform, box-shadow;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
+  animation: pulse 3s infinite;
+}
+
+.map-container .point:hover {
+  animation: none;
+  transform: translate(-50%, -50%) scale3D(1.35, 1.35 ,1);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.map-container .venezuela { top: 54%; left: 24%; }
+.map-container .brasil { top: 64%; left: 28%; }
+.map-container .argentina { top: 77%; left: 27%; }
+.map-container .colombia { top: 55%; left: 21%; }
+.map-container .panama { top: 51%; left: 18%; }
+.map-container .mexico { top: 38%; left: 12%; }
+.map-container .usa { top: 26%; left: 17%; }
+.map-container .arabia { top: 40%; left: 53%; }
+.map-container .turquia { top: 31%; left: 57%; }
+.map-container .rusia { top: 16%; left: 67%; }
+.map-container .china { top: 40%; left: 72%; }
+.map-container .japon { top: 34%; left: 86%; }
+.map-container .australia { top: 72%; left: 86%; }
+.map-container .france { top: 28%; left: 45%; }
+.map-container .espagne { top: 31%; left: 43.5%; }
+.map-container .thailand { top: 48%; left: 77%; }
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 204, 2, 0.561); }
+  70% { box-shadow: 0 0 0 25px rgba(41, 71, 74, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 172, 193, 0); }
+}
+
+.red-pulse {
+  background-color: rgb(79, 0, 0) !important; /* Change la couleur en rouge */
+  
+  animation: red-pulse-animation 3s infinite!important; /* Utilise une animation de pulsation */
+}
+
+@keyframes red-pulse-animation {
+  0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5); }
+  70% { box-shadow: 0 0 0 25px rgba(255, 0, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+ 
+}
+
+.contient {
+	
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+ padding-top: 3%;
+	font-family: "DM Sans", sans-serif;
+}
+
+
+.post {
+	display: flex;
+	text-decoration: none;
+	color: #000000!important;
+	max-width:400px;
+	position: relative;
+	
+	padding: 2rem;
+	box-shadow: inset 0 0 0 4px #f5a911, inset -4px -4px 0 6px #f5a911;
+	background-color: #f5a911;
+	cursor: pointer; 
+  height: 45px;
+    align-items: center;
+
+	&:before {
+		position: absolute; 
+		left: 0;
+		bottom: 0;
+		content: "";
+		display: block;
+		width: 100%;
+		color: #000000;
+		height: 100%;
+		background-color: #000000;
+		transform-origin: 0 bottom 0;
+		transform: scaleY(0);
+		transition: .4s ease-out;
+	}
+	
+	&:hover {
+		.post-title {
+			color: #f5a911;
+		}
+		&:before {
+			transform: scaleY(1);
+		}
+	}
+}
+
+.post-title {
+	position: relative;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+	font-weight: 700;
+	line-height: 1.333;
+	transition: .4s ease-out;
+}
+
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 20px 30px 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-out;
+  backdrop-filter: blur(8px) brightness(1.2);
+  -webkit-backdrop-filter: blur(8px) brightness(1.2);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 16px;
+  height: 120px;
+  list-style: none;
+   color: #f5a911;
+}
+
+a{
+  margin-left: 15px;
+   color: #f5a911;
+}
+
+nav.mask {
+  
+  mask-image: linear-gradient(black 70%, transparent);
+  -webkit-mask-image: linear-gradient(black 70%, transparent);
+}
+
+nav.mask-pattern {
+  top: 300px;
+  mask-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 12.21 10.57%27%3E%3Cpath fill=%27%23ffffff%27 d=%27M6.1 0h6.11L9.16 5.29 6.1 10.57 3.05 5.29 0 0h6.1z%27/%3E%3C/svg%3E"), linear-gradient(black calc(100% - 30px), transparent calc(100% - 30px));
+  mask-size: auto 30px, 100% 100%;
+  mask-repeat: repeat-x, no-repeat;
+  mask-position: left bottom, top left;
+  
+  -webkit-mask-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 12.21 10.57%27%3E%3Cpath fill=%27%23ffffff%27 d=%27M6.1 0h6.11L9.16 5.29 6.1 10.57 3.05 5.29 0 0h6.1z%27/%3E%3C/svg%3E"), linear-gradient(black calc(100% - 30px), transparent calc(100% - 30px));
+  -webkit-mask-size: auto 30px, 100% 100%;
+  -webkit-mask-repeat: repeat-x, no-repeat;
+  -webkit-mask-position: left bottom, top left;
+}

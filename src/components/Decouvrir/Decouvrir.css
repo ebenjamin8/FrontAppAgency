@@ -1,0 +1,1630 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+  
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f5a911;
+    background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  perspective: 800px;
+  background: #f7f1e3;
+  border-bottom: 2px solid #f5a911;
+  border-bottom: 2px solid #f5a911;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+figure {
+  width: 350px;
+  box-shadow: 3px 3px 40px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  position: relative;
+  pointer-events: none;
+  background: #ecf0f1;
+  transition: 0.3s ease-in-out;
+}
+
+
+/*Espagne*/
+
+figure .barcelone {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  background-image: URL(barcelona_1.jpg) ;
+  background-size: 350px auto;
+  background-repeat: no-repeat;
+}
+
+figure .seville {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  background-image: URL(attractions-seville.jpg) ;
+  background-size: 350px auto;
+  background-repeat: no-repeat;
+}
+
+figure .madrid {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  background-image: URL(istockphoto-1297090032-612x612.jpg) ;
+  background-size: 350px auto;
+  background-repeat: no-repeat;
+}
+
+/*USA*/
+
+figure .newyork {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  background-image: URL(depositphotos_175154528-stock-photo-view-new-york-city-night.jpg) ;
+  background-size: 350px auto;
+  background-repeat: no-repeat;
+}
+
+figure .chicago {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  background-image: URL(depositphotos_18277675-stock-photo-chicago-at-night.jpg) ;
+  background-size: 350px auto;
+  background-repeat: no-repeat;
+}
+
+figure .losangeles {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  background-image: URL(depositphotos_66847253-stock-photo-the-santa-monica-pier-at.jpg) ;
+  background-size: 350px auto;
+  background-repeat: no-repeat;
+}
+
+
+/*Arabie*/
+/*USA*/
+
+figure .riyad {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  background-image: URL(gettyimages-1220431909-612x612.jpg) ;
+  background-size: 350px auto;
+  background-repeat: no-repeat;
+}
+
+figure .djeddah {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  background-image: URL(Jeddah_Corniche_36.jpg) ;
+  background-size: 350px auto;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+/* Debut Card Barcelone*/
+figure .barcelone:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(transparent, #ecf0f1 44%);
+  border-radius: 0 0 8px 8px;
+}
+.figurebarcelone .figcaptionbarcelone {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: visible;
+  background: #ecf0f1;
+  border-radius: 0 0 8px 8px;
+}
+.figurebarcelone .figcaptionbarcelone span {
+  width: 100%;
+}
+.figurebarcelone .figcaptionbarcelone span:nth-child(1) {
+  position: absolute;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.figurebarcelone .figcaptionbarcelone span:nth-child(2) {
+  filter: url("#outline");
+  font-family: 'Bebas Neue', cursive;
+  font-size: 52px;
+  overflow: visible;
+  position: absolute;
+  top: -42px;
+  left: -48px;
+  white-space: nowrap;
+  color: #f5a911;
+  z-index: 10;
+  transform: rotate(-2deg);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: top 0.3s ease-in-out;
+}
+.figurebarcelone .figcaptionbarcelone span:nth-child(3) {
+  opacity: 0;
+  padding: 0 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: text;
+}
+.figurebarcelone .buttonbarcelone {
+  position: absolute;
+  bottom: -10px;
+  width: 130px;
+  left: calc(50% - 65px);
+  background: #0d0d0d;
+  color: #ffffff;
+  border: 0;
+  height: 35px;
+  border-radius: 4px;
+  transform: rotate(1deg);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 20;
+}
+.figurebarcelone .buttonbarcelone:focus {
+  outline: 0;
+}
+.figurebarcelone .buttonbarcelone:before {
+  content: "Plus";
+  position: absolute;
+  top: 8px;
+  left: 44px;
+  opacity: 1;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figurebarcelone .buttonbarcelone:after {
+  content: "Moins";
+  opacity: 0;
+  top: 8px;
+  left: 0;
+  position: absolute;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figurebarcelone:hover {
+  transition: 0.3s ease-in-out;
+  transform: rotateX(-2deg);
+  box-shadow: 3px -3px 40px 0 rgba(0, 0, 0, 0.4);
+}
+.figurebarcelone:hover .buttonbarcelone {
+  background: #000000;
+  bottom: -13px;
+  transition: 0.3s ease-in-out;
+}
+.figurebarcelone:hover span:nth-child(2) {
+  top: -39px;
+  transition: top 0.3s ease-in-out;
+}
+.figurebarcelone .open .img {
+  height: 0;
+}
+.figurebarcelone.open .figcaptionbarcelone {
+  height: 280px;
+  border-radius: 8px;
+}
+.figurebarcelone.open .figcaptionbarcelone span:nth-child(1) {
+  top: -45px;
+  opacity: 1;
+}
+.figurebarcelone.open .figcaptionbarcelone span:nth-child(2) {
+  top: -18px;
+}
+.figurebarcelone.open .figcaptionbarcelone span:nth-child(3) {
+  height: 100%;
+  opacity: 1;
+  padding: 80px 20px 40px 20px;
+}
+.figurebarcelone.open .buttonbarcelone:before {
+  opacity: 0;
+  left: 100%;
+}
+.figurebarcelone.open .buttonbarcelone:after {
+  opacity: 1;
+  left: 47px;
+}
+.figurebarcelone.open:hover .figcaptionbarcelone span:nth-child(2) {
+  top: -15px;
+  transition: top 0.3s ease-in-out;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+}
+
+/*Fin card barca*/
+
+
+/* Début Card Madrid */
+.figuremadrid .madrid:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(transparent, #ecf0f1 44%);
+  border-radius: 0 0 8px 8px;
+}
+.figuremadrid .figcaptionmadrid {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: visible;
+  background: #ecf0f1;
+  border-radius: 0 0 8px 8px;
+}
+.figuremadrid .figcaptionmadrid span {
+  width: 100%;
+}
+.figuremadrid .figcaptionmadrid span:nth-child(1) {
+  position: absolute;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.figuremadrid .figcaptionmadrid span:nth-child(2) {
+  filter: url("#outline");
+  font-family: 'Bebas Neue', cursive;
+  font-size: 52px;
+  overflow: visible;
+  position: absolute;
+  top: -42px;
+  left: -48px;
+  white-space: nowrap;
+  color: #b20600;
+  z-index: 10;
+  transform: rotate(-2deg);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: top 0.3s ease-in-out;
+}
+.figuremadrid .figcaptionmadrid span:nth-child(3) {
+  opacity: 0;
+  padding: 0 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: text;
+}
+.figuremadrid .buttonmadrid {
+  position: absolute;
+  bottom: -10px;
+  width: 130px;
+  left: calc(50% - 65px);
+  background: #0d0d0d;
+  color: #ffffff;
+  border: 0;
+  height: 35px;
+  border-radius: 4px;
+  transform: rotate(1deg);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 20;
+}
+.figuremadrid .buttonmadrid:focus {
+  outline: 0;
+}
+.figuremadrid .buttonmadrid:before {
+  content: "Plus";
+  position: absolute;
+  top: 8px;
+  left: 44px;
+  opacity: 1;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figuremadrid .buttonmadrid:after {
+  content: "Moins";
+  opacity: 0;
+  top: 8px;
+  left: 0;
+  position: absolute;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figuremadrid:hover {
+  transition: 0.3s ease-in-out;
+  transform: rotateX(-2deg);
+  box-shadow: 3px -3px 40px 0 rgba(0, 0, 0, 0.4);
+}
+.figuremadrid:hover .buttonmadrid {
+  background: #000000;
+  bottom: -13px;
+  transition: 0.3s ease-in-out;
+}
+.figuremadrid:hover span:nth-child(2) {
+  top: -39px;
+  transition: top 0.3s ease-in-out;
+}
+.figuremadrid .open .img {
+  height: 0;
+}
+.figuremadrid.open .figcaptionmadrid {
+  height: 280px;
+  border-radius: 8px;
+}
+.figuremadrid.open .figcaptionmadrid span:nth-child(1) {
+  top: -45px;
+  opacity: 1;
+}
+.figuremadrid.open .figcaptionmadrid span:nth-child(2) {
+  top: -18px;
+}
+.figuremadrid.open .figcaptionmadrid span:nth-child(3) {
+  height: 100%;
+  opacity: 1;
+  padding: 80px 20px 40px 20px;
+}
+.figuremadrid.open .buttonmadrid:before {
+  opacity: 0;
+  left: 100%;
+}
+.figuremadrid.open .buttonmadrid:after {
+  opacity: 1;
+  left: 47px;
+}
+.figuremadrid.open:hover .figcaptionmadrid span:nth-child(2) {
+  top: -15px;
+  transition: top 0.3s ease-in-out;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+}
+/* Fin Card Madrid */
+
+
+
+/* Début Card Séville */
+.figureseville .seville:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(transparent, #ecf0f1 44%);
+  border-radius: 0 0 8px 8px;
+}
+.figureseville .figcaptionseville {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: visible;
+  background: #ecf0f1;
+  border-radius: 0 0 8px 8px;
+}
+.figureseville .figcaptionseville span {
+  width: 100%;
+}
+.figureseville .figcaptionseville span:nth-child(1) {
+  position: absolute;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.figureseville .figcaptionseville span:nth-child(2) {
+  filter: url("#outline");
+  font-family: 'Bebas Neue', cursive;
+  font-size: 52px;
+  overflow: visible;
+  position: absolute;
+  top: -42px;
+  left: -48px;
+  white-space: nowrap;
+  color: #f5a911;
+  z-index: 10;
+  transform: rotate(-2deg);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: top 0.3s ease-in-out;
+}
+.figureseville .figcaptionseville span:nth-child(3) {
+  opacity: 0;
+  padding: 0 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: text;
+}
+.figureseville .buttonseville {
+  position: absolute;
+  bottom: -10px;
+  width: 130px;
+  left: calc(50% - 65px);
+  background: #0d0d0d;
+  color: #ffffff;
+  border: 0;
+  height: 35px;
+  border-radius: 4px;
+  transform: rotate(1deg);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 20;
+}
+.figureseville .buttonseville:focus {
+  outline: 0;
+}
+.figureseville .buttonseville:before {
+  content: "Plus";
+  position: absolute;
+  top: 8px;
+  left: 44px;
+  opacity: 1;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figureseville .buttonseville:after {
+  content: "Moins";
+  opacity: 0;
+  top: 8px;
+  left: 0;
+  position: absolute;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figureseville:hover {
+  transition: 0.3s ease-in-out;
+  transform: rotateX(-2deg);
+  box-shadow: 3px -3px 40px 0 rgba(0, 0, 0, 0.4);
+}
+.figureseville:hover .buttonseville {
+  background: #000000;
+  bottom: -13px;
+  transition: 0.3s ease-in-out;
+}
+.figureseville:hover span:nth-child(2) {
+  top: -39px;
+  transition: top 0.3s ease-in-out;
+}
+.figureseville .open .img {
+  height: 0;
+}
+.figureseville.open .figcaptionseville {
+  height: 280px;
+  border-radius: 8px;
+}
+.figureseville.open .figcaptionseville span:nth-child(1) {
+  top: -45px;
+  opacity: 1;
+}
+.figureseville.open .figcaptionseville span:nth-child(2) {
+  top: -18px;
+}
+.figureseville.open .figcaptionseville span:nth-child(3) {
+  height: 100%;
+  opacity: 1;
+  padding: 80px 20px 40px 20px;
+}
+.figureseville.open .buttonseville:before {
+  opacity: 0;
+  left: 100%;
+}
+.figureseville.open .buttonseville:after {
+  opacity: 1;
+  left: 47px;
+}
+.figureseville.open:hover .figcaptionseville span:nth-child(2) {
+  top: -15px;
+  transition: top 0.3s ease-in-out;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+}
+/* Fin Card Séville */
+
+
+/* Début Card New York */
+.figurenewyork .newyork:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(transparent, #ecf0f1 44%);
+  border-radius: 0 0 8px 8px;
+}
+.figurenewyork .figcaptionnewyork {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: visible;
+  background: #ecf0f1;
+  border-radius: 0 0 8px 8px;
+}
+.figurenewyork .figcaptionnewyork span {
+  width: 100%;
+}
+.figurenewyork .figcaptionnewyork span:nth-child(1) {
+  position: absolute;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.figurenewyork .figcaptionnewyork span:nth-child(2) {
+  filter: url("#outline");
+  font-family: "Bebas Neue", cursive;
+  font-size: 52px;
+  overflow: visible;
+  position: absolute;
+  top: -42px;
+  left: -48px;
+  white-space: nowrap;
+  color: #b20600;
+  z-index: 10;
+  transform: rotate(-2deg);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: top 0.3s ease-in-out;
+}
+.figurenewyork .figcaptionnewyork span:nth-child(3) {
+  opacity: 0;
+  padding: 0 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: text;
+}
+.figurenewyork .buttonnewyork {
+  position: absolute;
+  bottom: -10px;
+  width: 130px;
+  left: calc(50% - 65px);
+  background: #0d0d0d;
+  color: #ffffff;
+  border: 0;
+  height: 35px;
+  border-radius: 4px;
+  transform: rotate(1deg);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 20;
+}
+.figurenewyork .buttonnewyork:focus {
+  outline: 0;
+}
+.figurenewyork .buttonnewyork:before {
+  content: "Plus";
+  position: absolute;
+  top: 8px;
+  left: 44px;
+  opacity: 1;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figurenewyork .buttonnewyork:after {
+  content: "Moins";
+  opacity: 0;
+  top: 8px;
+  left: 0;
+  position: absolute;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figurenewyork:hover {
+  transition: 0.3s ease-in-out;
+  transform: rotateX(-2deg);
+  box-shadow: 3px -3px 40px 0 rgba(0, 0, 0, 0.4);
+}
+.figurenewyork:hover .buttonnewyork {
+  background: #000000;
+  bottom: -13px;
+  transition: 0.3s ease-in-out;
+}
+.figurenewyork:hover span:nth-child(2) {
+  top: -39px;
+  transition: top 0.3s ease-in-out;
+}
+.figurenewyork .open .img {
+  height: 0;
+}
+.figurenewyork.open .figcaptionnewyork {
+  height: 280px;
+  border-radius: 8px;
+}
+.figurenewyork.open .figcaptionnewyork span:nth-child(1) {
+  top: -45px;
+  opacity: 1;
+}
+.figurenewyork.open .figcaptionnewyork span:nth-child(2) {
+  top: -18px;
+}
+.figurenewyork.open .figcaptionnewyork span:nth-child(3) {
+  height: 100%;
+  opacity: 1;
+  padding: 80px 20px 40px 20px;
+}
+.figurenewyork.open .buttonnewyork:before {
+  opacity: 0;
+  left: 100%;
+}
+.figurenewyork.open .buttonnewyork:after {
+  opacity: 1;
+  left: 47px;
+}
+.figurenewyork.open:hover .figcaptionnewyork span:nth-child(2) {
+  top: -15px;
+  transition: top 0.3s ease-in-out;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+}
+/* Fin Card New York */
+
+
+/* Début Card Los Angeles */
+.figurelosangeles .losangeles:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(transparent, #ecf0f1 44%);
+  border-radius: 0 0 8px 8px;
+}
+.figurelosangeles .figcaptionlosangeles {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: visible;
+  background: #ecf0f1;
+  border-radius: 0 0 8px 8px;
+}
+.figurelosangeles .figcaptionlosangeles span {
+  width: 100%;
+}
+.figurelosangeles .figcaptionlosangeles span:nth-child(1) {
+  position: absolute;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.figurelosangeles .figcaptionlosangeles span:nth-child(2) {
+  filter: url("#outline");
+  font-family: "Bebas Neue", cursive;
+  font-size: 52px;
+  overflow: visible;
+  position: absolute;
+  top: -42px;
+  left: -48px;
+  white-space: nowrap;
+  color: #000000;
+  z-index: 10;
+  transform: rotate(-2deg);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: top 0.3s ease-in-out;
+}
+.figurelosangeles .figcaptionlosangeles span:nth-child(3) {
+  opacity: 0;
+  padding: 0 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: text;
+}
+.figurelosangeles .buttonlosangeles {
+  position: absolute;
+  bottom: -10px;
+  width: 130px;
+  left: calc(50% - 65px);
+  background: #0d0d0d;
+  color: #ffffff;
+  border: 0;
+  height: 35px;
+  border-radius: 4px;
+  transform: rotate(1deg);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 20;
+}
+.figurelosangeles .buttonlosangeles:focus {
+  outline: 0;
+}
+.figurelosangeles .buttonlosangeles:before {
+  content: "Plus";
+  position: absolute;
+  top: 8px;
+  left: 44px;
+  opacity: 1;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figurelosangeles .buttonlosangeles:after {
+  content: "Moins";
+  opacity: 0;
+  top: 8px;
+  left: 0;
+  position: absolute;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figurelosangeles:hover {
+  transition: 0.3s ease-in-out;
+  transform: rotateX(-2deg);
+  box-shadow: 3px -3px 40px 0 rgba(0, 0, 0, 0.4);
+}
+.figurelosangeles:hover .buttonlosangeles {
+  background: #000000;
+  bottom: -13px;
+  transition: 0.3s ease-in-out;
+}
+.figurelosangeles:hover span:nth-child(2) {
+  top: -39px;
+  transition: top 0.3s ease-in-out;
+}
+.figurelosangeles .open .img {
+  height: 0;
+}
+.figurelosangeles.open .figcaptionlosangeles {
+  height: 280px;
+  border-radius: 8px;
+}
+.figurelosangeles.open .figcaptionlosangeles span:nth-child(1) {
+  top: -45px;
+  opacity: 1;
+}
+.figurelosangeles.open .figcaptionlosangeles span:nth-child(2) {
+  top: -18px;
+}
+.figurelosangeles.open .figcaptionlosangeles span:nth-child(3) {
+  height: 100%;
+  opacity: 1;
+  padding: 80px 20px 40px 20px;
+}
+.figurelosangeles.open .buttonlosangeles:before {
+  opacity: 0;
+  left: 100%;
+}
+.figurelosangeles.open .buttonlosangeles:after {
+  opacity: 1;
+  left: 47px;
+}
+.figurelosangeles.open:hover .figcaptionlosangeles span:nth-child(2) {
+  top: -15px;
+  transition: top 0.3s ease-in-out;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+}
+/* Fin Card Los Angeles */
+
+
+/* Début Card Chicago */
+.figurechicago .chicago:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(transparent, #ecf0f1 44%);
+  border-radius: 0 0 8px 8px;
+}
+.figurechicago .figcaptionchicago {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: visible;
+  background: #ecf0f1;
+  border-radius: 0 0 8px 8px;
+}
+.figurechicago .figcaptionchicago span {
+  width: 100%;
+}
+.figurechicago .figcaptionchicago span:nth-child(1) {
+  position: absolute;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.figurechicago .figcaptionchicago span:nth-child(2) {
+  filter: url("#outline");
+  font-family: "Bebas Neue", cursive;
+  font-size: 52px;
+  overflow: visible;
+  position: absolute;
+  top: -42px;
+  left: -48px;
+  white-space: nowrap;
+  color: #022479;
+  z-index: 10;
+  transform: rotate(-2deg);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: top 0.3s ease-in-out;
+}
+.figurechicago .figcaptionchicago span:nth-child(3) {
+  opacity: 0;
+  padding: 0 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: text;
+}
+.figurechicago .buttonchicago {
+  position: absolute;
+  bottom: -10px;
+  width: 130px;
+  left: calc(50% - 65px);
+  background: #0d0d0d;
+  color: #ffffff;
+  border: 0;
+  height: 35px;
+  border-radius: 4px;
+  transform: rotate(1deg);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 20;
+}
+.figurechicago .buttonchicago:focus {
+  outline: 0;
+}
+.figurechicago .buttonchicago:before {
+  content: "Plus";
+  position: absolute;
+  top: 8px;
+  left: 44px;
+  opacity: 1;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figurechicago .buttonchicago:after {
+  content: "Moins";
+  opacity: 0;
+  top: 8px;
+  left: 0;
+  position: absolute;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figurechicago:hover {
+  transition: 0.3s ease-in-out;
+  transform: rotateX(-2deg);
+  box-shadow: 3px -3px 40px 0 rgba(0, 0, 0, 0.4);
+}
+.figurechicago:hover .buttonchicago {
+  background: #000000;
+  bottom: -13px;
+  transition: 0.3s ease-in-out;
+}
+.figurechicago:hover span:nth-child(2) {
+  top: -39px;
+  transition: top 0.3s ease-in-out;
+}
+.figurechicago .open .img {
+  height: 0;
+}
+.figurechicago.open .figcaptionchicago {
+  height: 280px;
+  border-radius: 8px;
+}
+.figurechicago.open .figcaptionchicago span:nth-child(1) {
+  top: -45px;
+  opacity: 1;
+}
+.figurechicago.open .figcaptionchicago span:nth-child(2) {
+  top: -18px;
+}
+.figurechicago.open .figcaptionchicago span:nth-child(3) {
+  height: 100%;
+  opacity: 1;
+  padding: 80px 20px 40px 20px;
+}
+.figurechicago.open .buttonchicago:before {
+  opacity: 0;
+  left: 100%;
+}
+.figurechicago.open .buttonchicago:after {
+  opacity: 1;
+  left: 47px;
+}
+.figurechicago.open:hover .figcaptionchicago span:nth-child(2) {
+  top: -15px;
+  transition: top 0.3s ease-in-out;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+}
+/* Fin Card Chicago */
+
+
+/* Début Card Riyad */
+.figureriyad .riyad:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(transparent, #ecf0f1 44%);
+  border-radius: 0 0 8px 8px;
+}
+.figureriyad .figcationriyad {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: visible;
+  background: #ecf0f1;
+  border-radius: 0 0 8px 8px;
+}
+.figureriyad .figcationriyad span {
+  width: 100%;
+}
+.figureriyad .figcationriyad span:nth-child(1) {
+  position: absolute;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.figureriyad .figcationriyad span:nth-child(2) {
+  filter: url("#outline");
+  font-family: "Bebas Neue", cursive;
+  font-size: 52px;
+  overflow: visible;
+  position: absolute;
+  top: -42px;
+  left: -48px;
+  white-space: nowrap;
+  color: #007A3D;
+  z-index: 10;
+  transform: rotate(-2deg);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: top 0.3s ease-in-out;
+}
+.figureriyad .figcationriyad span:nth-child(3) {
+  opacity: 0;
+  padding: 0 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: text;
+}
+.figureriyad .buttonriyad {
+  position: absolute;
+  bottom: -10px;
+  width: 130px;
+  left: calc(50% - 65px);
+  background: #0d0d0d;
+  color: #ffffff;
+  border: 0;
+  height: 35px;
+  border-radius: 4px;
+  transform: rotate(1deg);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 20;
+}
+.figureriyad .buttonriyad:focus {
+  outline: 0;
+}
+.figureriyad .buttonriyad:before {
+  content: "Plus";
+  position: absolute;
+  top: 8px;
+  left: 44px;
+  opacity: 1;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figureriyad .buttonriyad:after {
+  content: "Moins";
+  opacity: 0;
+  top: 8px;
+  left: 0;
+  position: absolute;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+
+.figureriyad:hover {
+  transition: 0.3s ease-in-out;
+  transform: rotateX(-2deg);
+  box-shadow: 3px -3px 40px 0 rgba(0, 0, 0, 0.4);
+}
+.figureriyad:hover .buttonriyad {
+  background: #000000;
+  bottom: -13px;
+  transition: 0.3s ease-in-out;
+}
+.figureriyad:hover span:nth-child(2) {
+  top: -39px;
+  transition: top 0.3s ease-in-out;
+}
+.figureriyad .open .img {
+  height: 0;
+}
+.figureriyad.open .figcationriyad {
+  height: 280px;
+  border-radius: 8px;
+}
+.figureriyad.open .figcationriyad span:nth-child(1) {
+  top: -45px;
+  opacity: 1;
+}
+.figureriyad.open .figcationriyad span:nth-child(2) {
+  top: -18px;
+}
+.figureriyad.open .figcationriyad span:nth-child(3) {
+  height: 100%;
+  opacity: 1;
+  padding: 80px 20px 40px 20px;
+}
+.figureriyad.open .buttonriyad:before {
+  opacity: 0;
+  left: 100%;
+}
+.figureriyad.open .buttonriyad:after {
+  opacity: 1;
+  left: 47px;
+}
+.figureriyad.open:hover .figcationriyad span:nth-child(2) {
+  top: -15px;
+  transition: top 0.3s ease-in-out;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+}
+/* Fin Card Riyad */
+
+
+
+
+/* Début Card Djeddah */
+.figuredjeddah .djeddah:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(transparent, #ecf0f1 44%);
+  border-radius: 0 0 8px 8px;
+}
+.figuredjeddah .figcationdjeddah {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: visible;
+  background: #ecf0f1;
+  border-radius: 0 0 8px 8px;
+}
+.figuredjeddah .figcationdjeddah span {
+  width: 100%;
+}
+.figuredjeddah .figcationdjeddah span:nth-child(1) {
+  position: absolute;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.figuredjeddah .figcationdjeddah span:nth-child(2) {
+  filter: url("#outline");
+  font-family: "Bebas Neue", cursive;
+  font-size: 52px;
+  overflow: visible;
+  position: absolute;
+  top: -42px;
+  left: -48px;
+  white-space: nowrap;
+  color: #007A3D;
+  z-index: 10;
+  transform: rotate(-2deg);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: top 0.3s ease-in-out;
+}
+.figuredjeddah .figcationdjeddah span:nth-child(3) {
+  opacity: 0;
+  padding: 0 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: text;
+}
+.figuredjeddah .buttondjeddah {
+  position: absolute;
+  bottom: -10px;
+  width: 130px;
+  left: calc(50% - 65px);
+  background: #0d0d0d;
+  color: #ffffff;
+  border: 0;
+  height: 35px;
+  border-radius: 4px;
+  transform: rotate(1deg);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 20;
+}
+.figuredjeddah .buttondjeddah:focus {
+  outline: 0;
+}
+.figuredjeddah .buttondjeddah:before {
+  content: "Plus";
+  position: absolute;
+  top: 8px;
+  left: 44px;
+  opacity: 1;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figuredjeddah .buttondjeddah:after {
+  content: "Moins";
+  opacity: 0;
+  top: 8px;
+  left: 0;
+  position: absolute;
+  transition: 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.figuredjeddah:hover {
+  transition: 0.3s ease-in-out;
+  transform: rotateX(-2deg);
+  box-shadow: 3px -3px 40px 0 rgba(0, 0, 0, 0.4);
+}
+.figuredjeddah:hover .buttondjeddah {
+  background: #000000;
+  bottom: -13px;
+  transition: 0.3s ease-in-out;
+}
+.figuredjeddah:hover span:nth-child(2) {
+  top: -39px;
+  transition: top 0.3s ease-in-out;
+}
+.figuredjeddah .open .img {
+  height: 0;
+}
+.figuredjeddah.open .figcationdjeddah {
+  height: 280px;
+  border-radius: 8px;
+}
+.figuredjeddah.open .figcationdjeddah span:nth-child(1) {
+  top: -45px;
+  opacity: 1;
+}
+.figuredjeddah.open .figcationdjeddah span:nth-child(2) {
+  top: -18px;
+}
+.figuredjeddah.open .figcationdjeddah span:nth-child(3) {
+  height: 100%;
+  opacity: 1;
+  padding: 80px 20px 40px 20px;
+}
+.figuredjeddah.open .buttondjeddah:before {
+  opacity: 0;
+  left: 100%;
+}
+.figuredjeddah.open .buttondjeddah:after {
+  opacity: 1;
+  left: 47px;
+}
+.figuredjeddah.open:hover .figcationdjeddah span:nth-child(2) {
+  top: -15px;
+  transition: top 0.3s ease-in-out;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+}
+
+/* Fin Card Djeddah */
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 60px 60px 60px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-out;
+  backdrop-filter: blur(8px) brightness(1.2);
+  -webkit-backdrop-filter: blur(8px) brightness(1.2);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  height: 120px;
+  list-style: none;
+  color: #f5a911;
+  background-color: #414141;
+  border-top: 2px solid #f5a911;
+}
+
+a{
+  margin-left: 15px;
+   color: #f5a911;
+}
+
+nav.mask {
+  
+  mask-image: linear-gradient(black 70%, transparent);
+  -webkit-mask-image: linear-gradient(black 70%, transparent);
+}
+
+nav.mask-pattern {
+  top: 300px;
+  mask-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 12.21 10.57%27%3E%3Cpath fill=%27%23ffffff%27 d=%27M6.1 0h6.11L9.16 5.29 6.1 10.57 3.05 5.29 0 0h6.1z%27/%3E%3C/svg%3E"), linear-gradient(black calc(100% - 30px), transparent calc(100% - 30px));
+  mask-size: auto 30px, 100% 100%;
+  mask-repeat: repeat-x, no-repeat;
+  mask-position: left bottom, top left;
+  
+  -webkit-mask-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 12.21 10.57%27%3E%3Cpath fill=%27%23ffffff%27 d=%27M6.1 0h6.11L9.16 5.29 6.1 10.57 3.05 5.29 0 0h6.1z%27/%3E%3C/svg%3E"), linear-gradient(black calc(100% - 30px), transparent calc(100% - 30px));
+  -webkit-mask-size: auto 30px, 100% 100%;
+  -webkit-mask-repeat: repeat-x, no-repeat;
+  -webkit-mask-position: left bottom, top left;
+}
+
+
+
+.paysEsp {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+  
+  
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(gold, gold);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+   position: relative;
+   left: 44.9%;
+}
+
+.paysEsp:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+
+.paysUsa {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+  
+  
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(#970000, #970000);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+   position: relative;
+   left: 44%;
+}
+
+.paysUsa:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+
+.paysAs {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+  
+  
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(#007A3D, #007A3D);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+   position: relative;
+   left: 42%;
+}
+
+.paysAs:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+
+.continue-application {
+    --color: #fff;
+    --background: #2d2d2d;
+    --background-hover: #000000;
+    --background-left: #f5a911;
+    --folder: #F3E9CB;
+    --folder-inner: #BEB393;
+    --paper: #FFFFFF;
+    --paper-lines: #BBC1E1;
+    --paper-behind: #E1E6F9;
+    --pencil-cap: #fff;
+    --pencil-top: #275EFE;
+    --pencil-middle: #fff;
+    --pencil-bottom: #5C86FF;
+    --shadow: rgba(13, 15, 25, .2);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    padding: 17px 29px 17px 69px;
+    transition: background .3s;
+    color: var(--color);
+    background: var(--bg, var(--background));
+}
+
+.continue-application > div {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 53px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+    background: var(--background-left);
+}
+
+.continue-application > div .folder {
+    width: 23px;
+    height: 27px;
+    position: absolute;
+    left: 15px;
+    top: 13px;
+}
+
+.continue-application > div .folder .top {
+    left: 0;
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    transform: translateX(var(--fx, 0));
+    transition: transform .4s ease var(--fd, .3s);
+}
+
+.continue-application > div .folder .top svg {
+    
+    height: 27px;
+    display: block;
+    fill: var(--folder);
+    transform-origin: 0 50%;
+    transition: transform .3s ease var(--fds, .45s);
+    transform: perspective(120px) rotateY(var(--fr, 0deg));
+}
+
+.continue-application > div .folder:before,
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+    content: '';
+    position: absolute;
+    left: var(--l, 0);
+    top: var(--t, 0);
+    width: var(--w, 100%);
+    height: var(--h, 100%);
+    border-radius: 1px;
+    background: var(--b, var(--folder-inner));
+}
+
+.continue-application > div .folder:before {
+    box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+    transform: translateX(var(--fx, 0));
+    transition: transform .4s ease var(--fd, .3s);
+}
+
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+    --l: 1px;
+    --t: 1px;
+    --w: 21px;
+    --h: 25px;
+    --b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+    transform: translate(var(--pbx, 0), var(--pby, 0));
+    transition: transform .4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+    z-index: 1;
+}
+
+.continue-application > div .folder .paper:before,
+.continue-application > div .folder .paper:after {
+    content: '';
+    width: var(--wp, 14px);
+    height: 2px;
+    border-radius: 1px;
+    transform: scaleY(.5);
+    left: 3px;
+    top: var(--tp, 3px);
+    position: absolute;
+    background: var(--paper-lines);
+    box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+    --tp: 6px;
+    --wp: 10px;
+}
+
+.continue-application > div .pencil {
+    height: 2px;
+    width: 3px;
+    border-radius: 1px 1px 0 0;
+    top: 8px;
+    left: 105%;
+    position: absolute;
+    z-index: 3;
+    transform-origin: 50% 19px;
+    background: var(--pencil-cap);
+    transform: translateX(var(--pex, 0)) rotate(35deg);
+    transition: transform .4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before,
+.continue-application > div .pencil:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+    width: var(--w, 5px);
+    height: var(--h, 20px);
+    border-radius: var(--br, 2px 2px 0 0);
+    top: var(--t, 2px);
+    left: var(--l, -1px);
+}
+
+.continue-application > div .pencil:before {
+    clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+}
+
+.continue-application > div .pencil:after {
+    --b: none;
+    --w: 3px;
+    --h: 6px;
+    --br: 0 2px 1px 0;
+    --t: 3px;
+    --l: 3px;
+    border-top: 1px solid var(--pencil-top);
+    border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before,
+.continue-application:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--color);
+    transform-origin: 9px 1px;
+    transform: translateX(var(--cx, 0)) scale(.5) rotate(var(--r, -45deg));
+    top: 26px;
+    right: 16px;
+    transition: transform .3s;
+}
+
+.continue-application:after {
+    --r: 45deg;
+}
+
+.continue-application:hover {
+    --cx: 2px;
+    --bg: var(--background-hover);
+    --fx: -40px;
+    --fr: -60deg;
+    --fd: .15s;
+    --fds: 0s;
+    --pbx: 3px;
+    --pby: -3px;
+    --pbd: .15s;
+    --pex: -24px;
+}
